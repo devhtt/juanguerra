@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
+    body {
+      background-image: url('fondo-login.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 40px;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      height: 90px;
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      margin-left: 60px;
+      margin-bottom: 60px;
+    }
+
+    .info-container {
+      color: black;
+      max-width: 1200px;
+      text-align: center;
+      margin-right: 230px;
+      margin-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .info-container h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .info-container p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      max-width: 500px;
+    }
+
+    .info-container video {
+      width: 100%;
+      max-width: 640px;
+      height: 360px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .login-container button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <img src="IEJG.png" alt="Logo IEJG" class="logo">
+
+  <div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <input type="text" placeholder="Usuario" required>
+    <input type="password" placeholder="Contraseña" required>
+    <button>Ingresar</button>
+  </div>
+
+  <div class="info-container">
+    <h1>Institución Educativa Juan Guerra</h1>
+    <p>Formamos con valores, construimos el futuro con conocimiento y compromiso.</p>
+    <video src="VIDEO1.mp4" autoplay muted loop></video>
+  </div>
+</body>
+</html>
