@@ -113,9 +113,9 @@
 
   <div class="login-container">
     <h2>Iniciar Sesión</h2>
-    <input type="text" placeholder="Usuario" required>
-    <input type="password" placeholder="Contraseña" required>
-    <button>Ingresar</button>
+    <input type="text" id="login-correo" placeholder="Correo" required>
+    <input type="password" id="login-password" placeholder="Contraseña" required>
+    <button onclick="iniciarSesion()">Ingresar</button>
   </div>
 
   <div class="info-container">
@@ -123,5 +123,23 @@
     <p>Formamos con valores, construimos el futuro con conocimiento y compromiso.</p>
     <video src="VIDEO1.mp4" autoplay muted loop></video>
   </div>
+
+  <script>
+    function iniciarSesion() {
+      const correo = document.getElementById("login-correo").value.trim();
+      const password = document.getElementById("login-password").value.trim();
+      if (!correo.includes("@gmail.com")) {
+        alert("Solo se permite correos @gmail.com");
+        return;
+      }
+      if (!password) {
+        alert("Ingrese una contraseña.");
+        return;
+      }
+      // Guardar el correo en localStorage (opcional)
+      localStorage.setItem("usuarioCorreo", correo);
+      window.location.href = "dashboard.html";
+    }
+  </script>
 </body>
 </html>

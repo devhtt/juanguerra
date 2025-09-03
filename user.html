@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Universidad César Vallejo - Inicio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="script.js" defer></script>
+
+  <!-- Franja superior blanca -->
+  <div class="topbar">
+    <div class="logo-titulo">
+      <img src="UCV.png.png" alt="Logo UCV" class="logo">
+      <div class="titulo">Universidad César Vallejo</div>
+    </div>
+    <div class="nav-buttons">
+      <button>Registrarte</button>
+      <button>Saber Más</button>
+      <button>Plataformas</button>
+      <button>Directivos</button>
+      <button onclick="irADashboard()">Panel</button>
+    </div>
+  </div>
+
+  <!-- Banner azul -->
+  <header>
+    <h1 class="banner-texto">Bienvenidos a la Plataforma Educativa</h1>
+  </header>
+
+  <!-- Contenido -->
+  <section class="contenido">
+    <!-- Video a la izquierda -->
+    <div class="video">
+      <video autoplay muted loop playsinline>
+        <source src="Presentation.mp4.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Texto a la derecha -->
+    <div class="texto">
+      <h2>Accede a todos los recursos académicos</h2>
+      <p id="bienvenida-usuario">Gestiona tu aprendizaje desde cualquier lugar y en cualquier momento gracias a nuestra plataforma digital.</p>
+
+      <div class="acciones">
+        <!-- Aquí ya no hay formularios ni botones de sesión/registro -->
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+          <p id="error-correo" class="error"></p>
+
+          <input type="password" id="login-password" placeholder="Contraseña">
+          <p id="error-password" class="error"></p>
+
+          <button onclick="iniciarSesion()">Entrar</button>
+        </div>
+
+        <!-- Formulario de registro -->
+        <div id="formulario-registro" class="formulario oculto">
+          <input type="text" id="registro-nombre" placeholder="Nombre completo">
+
+          <input type="email" id="registro-correo" placeholder="Correo electrónico">
+          <p id="error-registro-correo" class="error"></p>
+
+          <input type="password" id="registro-password" placeholder="Crear contraseña">
+          <p id="error-registro-password" class="error"></p>
+
+          <button onclick="registrar()">Registrarme</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
