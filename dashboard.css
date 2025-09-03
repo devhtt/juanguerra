@@ -119,7 +119,7 @@ body {
 }
 
 .logo-ucv {
-  height: 54px;
+  height: 80px;
   object-fit: contain;
   border-radius: 0 !important;
   filter: none;
@@ -962,4 +962,5 @@ li.nota-item:last-child {
 .btn-iniciar-curso:hover {
   background: #218838 !important;
   color: #fff !important;
+
 }
